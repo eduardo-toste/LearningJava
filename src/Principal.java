@@ -1,3 +1,4 @@
+import br.com.alura.screenmatch.calculos.CalculadoraDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 
@@ -12,5 +13,9 @@ public class Principal {
         filme.avalia(8);
         filme.avalia(5);
         filme.avalia(10);
+
+        CalculadoraDeTempo calculadora = new CalculadoraDeTempo();
+        calculadora.inclui(filme);
+        System.out.println(calculadora.getTempoTotal());
     }
 }
